@@ -4,15 +4,15 @@
       .side-header__box__user-name
         masa
       %ul.side-header__box__menu
-        %li.side-header__box__menu__new-group
-          %a{:href => "/groups/new"}
+        %li
+          = link_to "#" , class: "side-header__box__menu__new-group" do
             %i.fa.fa-edit
-        %li.side-header__box__menu__edit-user
-          %a{:href => "/users/22394/edit"}
+        %li
+          = link_to "#", class: "side-header__box__menu__edit-user" do
             %i.fa.fa-cog
 
   .groups
-    %a{:href => "/groups/28341/messages"}
+    = link_to "#" do
       .group
         %p.group__group-name techchamp
         %p.group__latest-message なんば

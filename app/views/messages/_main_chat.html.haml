@@ -7,8 +7,9 @@
         Member：
         %li.main-header__left-box__member-list__member Diem
         %li.main-header__left-box__member-list__member Masa
-    %a{:href => "#"}
-      .main-header__edit-btn Edit
+    .main-header__edit-btn
+      = link_to "#", class: "main-header__edit" do
+        Edit
   .messages
     .message
       %p.message__upper-info__talker
@@ -26,8 +27,9 @@
       おはよう！
   .form
     .input-box
-      %input#message_content.input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
-      %label.input-box__image{:for => "message_image"}
+      %input#message_content.input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}
+      %label.input-box__image{for: "message_image"}
         %i.fa.fa-image
-        %input#message_image.input-box__image__file{:name => "message[image]", :type => "file"}/
-    %input.submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
+        %input#message_image.input-box__image__file{name: "message[image]", type: "file"}
+    %input{type: "submit" , class: "submit-btn", value: "Send"}
+
