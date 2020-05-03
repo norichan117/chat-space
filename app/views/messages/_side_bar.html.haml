@@ -1,0 +1,20 @@
+.chat-side
+  .side-header
+    .side-header__box
+      .side-header__box__user-name
+        masa
+      %ul.side-header__box__menu
+        %li
+          = link_to "#" , class: "side-header__box__menu__new-group" do
+            %i.fa.fa-edit
+        %li
+          = link_to "#", class: "side-header__box__menu__edit-user" do
+            %i.fa.fa-cog
+
+  .groups
+    = link_to "#" do
+      .group
+        %p.group__group-name techchamp
+        %p.group__latest-message なんば
+
+    
