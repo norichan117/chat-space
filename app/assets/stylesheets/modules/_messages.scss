@@ -54,20 +54,20 @@ $white: #ffffff;
     padding: 20px 0px 0px 20px;
     color: $white;
     text-decoration: none;
-    .group {
-      &__group-name {
-        font-size: 15px;
-        color: $white;
-        text-decoration: none;
-      }
-      &__latest-message {
-        font-size: 11px;
-        margin-top: 5px;
-        margin-bottom: 40px;
-        color: $white;
-        text-decoration: none;
-      }
+
+    .group__group-name {
+      font-size: 15px;
+      color: $white;
+      text-decoration: none;
     }
+    .group__latest-message {
+      font-size: 11px;
+      margin-top: 5px;
+      margin-bottom: 40px;
+      color: $white;
+      text-decoration: none;
+    }
+    
   }
 }
 
