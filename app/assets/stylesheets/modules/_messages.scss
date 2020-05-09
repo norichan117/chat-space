@@ -124,6 +124,7 @@ $white: #ffffff;
     background: #fafafa;
     width: calc(100vw - 300px);
     height: calc(100vh - 190px);
+    overflow: scroll;
     .message {
       padding-left: 40px;
       padding-top: 35px;
@@ -140,17 +141,11 @@ $white: #ffffff;
         padding-left: 10px;
       }
     }
-    .message__text {
+    .message__lower__text {
       color: #434A54;
       font-size: 14px;
       padding-left: 40px;
       padding-bottom: px;
-    }
-    .message__text2 {
-      color: #434A54;
-      font-size: 14px;
-      padding-left: 40px;
-      padding-bottom: 46px;
     }
   }
   .form {
