@@ -158,29 +158,32 @@ $white: #ffffff;
     width: calc(100vw - 300px);
     height: 90px;
     padding: 20px 40px;
-    display: flex;
-    .input-box {
-      background: $white;
-      width: calc(100vw - 495px);
-      height:50px;
+    
+    form {
       display: flex;
-      position: relative;
-      &__text {
-        height: 50px;
-        width: 100%;
-        padding: 0 40px 0 10px;
-        border-style: none;
-        color: $gray-2;
+      .input-box {
+        background: $white;
+        width: calc(100vw - 495px);
+        height:50px;
         display: flex;
-        align-items: center;
-      }
-      &__image{
-        font-size: 1.3rem;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        &__file {
-          display: none;
+        position: relative;
+        &__text {
+          height: 50px;
+          width: 100%;
+          border-style: none;
+          color: $gray-2;
+          display: flex;
+          align-items: center;
+          padding: 0 40px 0 10px;
+        }
+        &__image{
+          font-size: 1.3rem;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          &__file {
+            display: none;
+          }
         }
       }
     }
