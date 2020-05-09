@@ -11,8 +11,9 @@
     .main-header__edit-btn
       = link_to edit_group_path(@group.id), class: "main-header__edit" do
         Edit
-  .messages
-    = render @messages
+  .message-list
+    .messages
+      = render @messages
   .form
     = form_for [@group, @message] do |f|
       .input-box
