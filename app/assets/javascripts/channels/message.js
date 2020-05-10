@@ -42,7 +42,7 @@ $(function() {
 
 
 
-  $('#new_message').on('submit',function(e){
+  $('submit',function(e){
     console.log('abc');
     e.preventDefault()
     var formData = new FormData(this);
