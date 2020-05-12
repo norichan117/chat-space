@@ -3,7 +3,7 @@ $(function() {
     if (message.image) {
       var html =
        `<div class="message" data-message-id=${message.id}>
-          <div class="message">
+          <div class="message__upper-info">
             <div class="message__upper-info__talker">
               ${message.user_name}
             </div>
@@ -22,7 +22,7 @@ $(function() {
     } else {
       var html = 
          `<div class="message" data-message-id=${message.id}>
-            <div class="message">
+            <div class="message__upper-info">
               <div class="message__upper-info__talker">
                 ${message.user_name}
               </div>
@@ -70,6 +70,7 @@ $(function() {
 
   var reloadMessages = function() {
     var last_message_id = $('.message:last').data("message-id");
+    console.log(last_message_id)
     $.ajax({
       url: "api/messages",
       type: 'get',
