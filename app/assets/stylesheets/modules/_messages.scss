@@ -129,19 +129,19 @@ $white: #ffffff;
       padding-left: 40px;
       padding-top: 35px;
       padding-bottom: 12px;
-      &__upper-info__talker {
+      display: flex;
+      &__talker {
         color: $gray-1;
         font-size: 16px;
-        float: left;
         padding-right: 10px;
       }
-      &__upper-info__date {
+      &__date {
         color: $gray-2;
         font-size: 12px;
         padding-left: 10px;
       }
     }
-    .message__lower__text {
+    .message__lower {
       color: #434A54;
       font-size: 14px;
       padding-left: 40px;
