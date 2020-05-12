@@ -125,7 +125,7 @@ $white: #ffffff;
     width: calc(100vw - 300px);
     height: calc(100vh - 190px);
     overflow: scroll;
-    .message {
+    .message__upper-info {
       padding-left: 40px;
       padding-top: 35px;
       padding-bottom: 12px;
@@ -145,7 +145,6 @@ $white: #ffffff;
       color: #434A54;
       font-size: 14px;
       padding-left: 40px;
-      padding-bottom: px;
     }
   }
   .form {
@@ -193,4 +192,8 @@ $white: #ffffff;
       align-items: center;
     }
   }
+}
+
+a {
+  text-decoration: none;
 }
