@@ -15,8 +15,8 @@ $(function() {
             <p class="message__lower__text">
               ${message.content}
             </p>
+            <img src=${message.image} class="lower-message__image">
           </div>
-          <img src=${message.image}>
         </div>`
       return html;
     } else {
@@ -57,7 +57,7 @@ $(function() {
     .done(function(data) {
       
       var html = buildHTML(data);
-      $('.message-list').append(html);
+      $('.messages').append(html);
       $('.message-list').animate({ scrollTop: $('.message-list')[0].scrollHeight});
       $('form')[0].reset();
       $(".submit-btn").attr('disabled', false);
@@ -83,7 +83,7 @@ $(function() {
         $.each(messages, function(i, message) {
           insertHTML += buildHTML(message)
         });
-        $('.message-list').append(insertHTML);
+        $('.messages').append(insertHTML);
         $('.message-list').animate({ scrollTop: $('.message-list')[0].scrollHeight});
       }
     })
