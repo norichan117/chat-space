@@ -58,14 +58,12 @@ $white: #ffffff;
     .group__group-name {
       font-size: 15px;
       color: $white;
-      text-decoration: none;
     }
     .group__latest-message {
       font-size: 11px;
       margin-top: 5px;
       margin-bottom: 40px;
       color: $white;
-      text-decoration: none;
     }
     
   }
@@ -194,6 +192,6 @@ $white: #ffffff;
   }
 }
 
-a {
-  text-decoration: none;
-}
+// a {
+//   text-decoration: none;
+// }
